@@ -173,18 +173,18 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  str;
-  if (numero > 0)
-  {
-    str = "Es positivo";
+  if (numero == 0){
+    return false;
   }
-  else if (numero == 0){
-    str = false;
+  else {
+    if (numero > 0)
+    {
+      return "Es positivo";
+    }
+    else{    
+      return "Es negativo";
+    }    
   }
-  else{    
-    str = "Es negativo";
-  }
-  return str;
 }
 
 function agregarSimboloExclamacion(str) {
@@ -249,11 +249,17 @@ function esVocal(letra){
   // "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   // Escribe tu código aquí
+  char = ["a", "e", "i", "o", "u"]  
   if(letra.length > 1){
-    return "Dato Incorrecto";
+    return "Dato incorrecto";
   }
   else{
-    if(letra)
+    if(char.indexOf(letra) >= 0){
+      return "Es vocal";
+    }
+    else{
+      return "Dato incorrecto";
+    }
   }
 }
 
