@@ -106,6 +106,9 @@ const nuevoObjeto = {
     decirHola: function() {
         console.log('Hola a todo el mundo!');
     }
+    decirAdios: function(){
+      console.log('Adiós a todo el mundo!');
+    }
 }
 
 nuevoObjeto.decirHola(); //Hola a todo el mundo!
