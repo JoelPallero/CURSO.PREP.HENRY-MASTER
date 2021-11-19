@@ -133,7 +133,7 @@ Nosotros también podemos generar nuestros propios constructores que de los cual
   }
 
 > Persona.prototype.saludar = function() {
-    console.log('Soy '+this.nombre+' de '+this.ciudad);
+    console.log('Soy '+ this.nombre+' de '+this.ciudad);
   }
 
 > var Emi = new Persona('Emi', 'Chequer', 'Buenos Aires');
